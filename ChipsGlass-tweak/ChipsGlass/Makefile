@@ -6,6 +6,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = ChipsGlass
 ChipsGlass_FILES = Tweak.x
+ChipsGlass_FRAMEWORKS = UIKit QuartzCore
 ChipsGlass_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
