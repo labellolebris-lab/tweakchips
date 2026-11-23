@@ -7,7 +7,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: Randomblock1/theos-action@v1
       - run: make package FINALPACKAGE=1
+        working-directory: ChipsGlass-tweak/ChipsGlass
       - uses: actions/upload-artifact@v4
         with:
           name: deb
-          path: packages/*.deb
+          path: ChipsGlass-tweak/ChipsGlass/packages/*.deb
