@@ -1,0 +1,9 @@
+Package: net.adist.chipsglass
+Name: ChipsGlass
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Effet verre (glass) sur le dock
+Maintainer: adist
+Author: adist
+Section: Tweaks
+Depends: mobilesubstrate
