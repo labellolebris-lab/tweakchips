@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>entry</key>
+  <dict>
+    <key>cell</key><string>PSLinkCell</string>
+    <key>label</key><string>ChipsGlass</string>
+  </dict>
+  <key>items</key>
+  <array>
+    <dict>
+      <key>cell</key><string>PSGroupCell</string>
+      <key>label</key><string>Liquid Glass</string>
+    </dict>
+    <dict>
+      <key>cell</key><string>PSSwitchCell</string>
+      <key>label</key><string>Activer</string>
+      <key>key</key><string>enabled</string>
+      <key>default</key><true/>
+      <key>defaults</key><string>net.adist.chipsglass</string>
+      <key>PostNotification</key><string>net.adist.chipsglass/reload</string>
+    </dict>
+    <dict>
+      <key>cell</key><string>PSGroupCell</string>
+      <key>label</key><string>Style des icônes</string>
+    </dict>
+    <dict>
+      <key>cell</key><string>PSLinkListCell</string>
+      <key>label</key><string>Mode</string>
+      <key>key</key><string>mode</string>
+      <key>default</key><string>auto</string>
+      <key>defaults</key><string>net.adist.chipsglass</string>
+      <key>detail</key><string>PSListItemsController</string>
+      <key>validValues</key>
+      <array>
+        <string>auto</string><string>light</string><string>dark</string><string>clear</string>
+      </array>
+      <key>validTitles</key>
+      <array>
+        <string>Auto (jour/nuit)</string><string>Clair</string><string>Sombre</string><string>Clear (iOS 26)</string>
+      </array>
+      <key>PostNotification</key><string>net.adist.chipsglass/reload</string>
+    </dict>
+    <dict>
+      <key>cell</key><string>PSGroupCell</string>
+      <key>label</key><string>Teinte des icônes</string>
+    </dict>
+    <dict>
+      <key>cell</key><string>PSLinkListCell</string>
+      <key>label</key><string>Couleur</string>
+      <key>key</key><string>tint</string>
+      <key>default</key><string>none</string>
+      <key>defaults</key><string>net.adist.chipsglass</string>
+      <key>detail</key><string>PSListItemsController</string>
+      <key>validValues</key>
+      <array>
+        <string>none</string><string>blue</string><string>pink</string>
+        <string>red</string><string>orange</string><string>green</string>
+        <string>purple</string><string>mono</string>
+      </array>
+      <key>validTitles</key>
+      <array>
+        <string>Aucune</string><string>Bleu</string><string>Rose</string>
+        <string>Rouge</string><string>Orange</string><string>Vert</string>
+        <string>Violet</string><string>Noir et blanc</string>
+      </array>
+      <key>PostNotification</key><string>net.adist.chipsglass/reload</string>
+    </dict>
+    <dict>
+      <key>cell</key><string>PSSliderCell</string>
+      <key>key</key><string>intensity</string>
+      <key>default</key><real>0.6</real>
+      <key>min</key><real>0</real>
+      <key>max</key><real>1</real>
+      <key>showValue</key><true/>
+      <key>defaults</key><string>net.adist.chipsglass</string>
+      <key>PostNotification</key><string>net.adist.chipsglass/reload</string>
+    </dict>
+  </array>
+</dict>
+</plist>
