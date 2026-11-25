@@ -1,9 +1,9 @@
 Package: net.adist.chipsglass
 Name: ChipsGlass
-Version: 1.3
+Version: 1.4
 Architecture: iphoneos-arm
-Description: Liquid Glass, mode sombre et teinte pour les icones
+Description: Remplace chaque icone par ta propre image
 Maintainer: adist
 Author: adist
 Section: Tweaks
-Depends: mobilesubstrate, preferenceloader
+Depends: mobilesubstrate
